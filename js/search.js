@@ -42,16 +42,18 @@ function searchProduct() {
   const matchedProduct = productKeys.find((key) => key.toLowerCase() === query);
 
   if (matchedProduct) {
-    localStorage.setItem("selectedProduct", matchedProduct);
+  localStorage.setItem("selectedProduct", matchedProduct);
 
-    const currentPath = window.location.pathname.toLowerCase();
+  const repoName = "AgroTrade";
 
-    if (currentPath.includes("/html/")) {
-      window.location.href = "product.html";
-    } else {
-      window.location.href = "./html/product.html";
-    }
+  if (window.location.hostname.includes("github.io")) {
+    window.location.href = `/${repoName}/html/product.html`;
+  } else if (window.location.pathname.includes("/html/")) {
+    window.location.href = "product.html";
+  } else {
+    window.location.href = "html/product.html";
   }
+}
 }
 
 // BUTTON CLICK
