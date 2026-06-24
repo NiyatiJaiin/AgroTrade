@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details | AgroTrade</title>
+
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/toast.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header>
+      <nav class="navbar">
+        <a href="../index.html" class="logo"> Agro <span>Trade</span> </a>
+
+        <ul class="navlist">
+          <li>
+            <a href="../index.html" class="link">HOME</a>
+          </li>
+
+          <li>
+            <a href="shop.html" class="link link-active">SHOP</a>
+          </li>
+
+          <li>
+            <a href="page.html" class="link">PAGE</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="link">BLOG</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="link">CONTACT</a>
+          </li>
+
+          <li class="nav-icons">
+            <a href="#" class="icon" id="searchIcon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="#" class="icon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="cart.html" class="icon">
+              <i class="fa-solid fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
+
+        <a class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <!-- PRODUCT BANNER -->
+
+      <section class="product-banner">
+        <div class="banner-content">
+          <h1>Product Details</h1>
+          <p>Fresh Farm Products Delivered To Your Doorstep</p>
+        </div>
+      </section>
+
+      <!-- PRODUCT DETAILS -->
+
+      <section class="product-page">
+        <div class="product-container">
+          <div class="product-image">
+            <img id="productImage" src="" alt="" />
+          </div>
+
+          <div class="product-details">
+            <h2 id="productName"></h2>
+
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(124 Reviews)</span>
+            </div>
+
+            <h3 id="productPrice"></h3>
+
+            <p id="productDescription"></p>
+
+            <div class="quantity-box">
+              <button id="minus">-</button>
+
+              <span id="quantity">1</span>
+
+              <button id="plus">+</button>
+            </div>
+
+            <button class="cart-btn" id="addToCart">Add To Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESCRIPTION -->
+
+      <section class="description">
+        <h2>Product Description</h2>
+
+        <p id="longDescription">
+          Fresh farm products sourced directly from trusted farmers across
+          India. Naturally grown, carefully harvested and delivered fresh to
+          your doorstep.
+        </p>
+      </section>
+
+      <!-- RELATED PRODUCTS -->
+
+      <section class="related-products">
+        <h2>You May Also Like</h2>
+
+        <div class="related-container">
+          <div class="related-card">
+            <img src="../images/honey.jpg" alt="Organic Honey" />
+
+            <h3>Organic Honey</h3>
+
+            <p>₹250</p>
+
+            <a href="product.html" class="view" data-product="honey">
+              View Product
+            </a>
+          </div>
+
+          <div class="related-card">
+            <img src="../images/rice.jpg" alt="Basmati Rice" />
+
+            <h3>Basmati Rice</h3>
+
+            <p>₹180</p>
+
+            <a href="product.html" class="view" data-product="rice">
+              View Product
+            </a>
+          </div>
+
+          <div class="related-card">
+            <img src="../images/tomatoes.jpg" alt="Fresh Tomatoes" />
+
+            <h3>Fresh Tomatoes</h3>
+
+            <p>₹40/kg</p>
+
+            <a href="product.html" class="view" data-product="tomato">
+              View Product
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Agro<span>Trade</span></h3>
+
+          <p>
+            Bringing fresh farm produce directly from trusted farmers to your
+            doorstep across India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+
+          <ul>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Grains</a></li>
+            <li><a href="#">Organic Products</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Delhi, India
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 98765 43210
+          </p>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            support@agrotrade.com
+          </p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AgroTrade. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SEARCH MODAL -->
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <button id="searchSubmit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast"></div>
+
+    <script src="../js/product.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/toast.js"></script>
+  </body>
+</html>

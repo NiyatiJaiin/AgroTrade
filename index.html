@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroTrade</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/toast.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo"> Agro <span>Trade</span> </a>
+
+        <ul class="navlist">
+          <li>
+            <a href="index.html" class="link link-active">HOME </a>
+          </li>
+          <li>
+            <a href="html/shop.html" class="link">SHOP </a>
+          </li>
+          <li>
+            <a href="html/page.html" class="link">PAGE </a>
+          </li>
+          <li>
+            <a href="html/blog.html" class="link">BLOG </a>
+          </li>
+          <li>
+            <a href="html/contact.html" class="link">CONTACT </a>
+          </li>
+
+          <li class="nav-auth">
+            <a href="html/login.html" class="link" id="loginLink">LOGIN</a>
+            <a href="html/signup.html" class="link" id="signupLink">SIGN UP</a>
+            <a href="#" class="link" id="logoutLink" style="display: none">
+              LOGOUT
+            </a>
+          </li>
+
+          <li class="nav-icons">
+            <a href="#" class="icon" id="searchIcon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="#" class="icon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="html/cart.html" class="icon icon-active">
+              <i class="fa-solid fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
+
+        <a class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- SECTIONS HERE -->
+    <main>
+      <!-- HERO SECTION  -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Farm Fresh Produce Delivered To Your Doorstep</h1>
+
+          <p>
+            Buy fresh vegetables, fruits, grains and organic products directly
+            from trusted farmers across India.
+          </p>
+
+          <div class="hero-btns">
+            <a href="html/shop.html" class="btn">Shop Now</a>
+            <a href="html/blog.html" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Section -->
+      <section class="categories">
+        <div class="section-title">
+          <h2>Shop By Category</h2>
+          <p>
+            Explore fresh farm products sourced directly from trusted farmers.
+          </p>
+        </div>
+
+        <div class="category-container">
+          <div class="category">
+            <a href="html/shop.html">
+              <img src="images/vegetables.jpg" />
+              <button>Fresh Vegetables</button>
+            </a>
+          </div>
+
+          <div class="category">
+            <a href="html/shop.html">
+              <img src="images/fruits.jpg" />
+              <button>Fresh Fruits</button>
+            </a>
+          </div>
+
+          <div class="category">
+            <a href="html/shop.html">
+              <img src="images/grains.jpg" />
+              <button>Grains & Cereals</button>
+            </a>
+          </div>
+
+          <div class="category">
+            <a href="html/shop.html">
+              <img src="images/pulses.jpg" />
+              <button>Pulses & Legumes</button>
+            </a>
+          </div>
+
+          <div class="category">
+            <a href="html/shop.html">
+              <img src="images/organic.jpg" />
+              <button>Organic Products</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Product section -->
+      <section class="newProducts">
+        <div class="container">
+          <h2>New Arrivals</h2>
+          <p>Freshly harvested products from trusted farmers</p>
+
+          <div class="card-container wrap">
+            <div class="card new">
+              <img src="images/newProduct1.jpg" />
+
+              <div class="card-content">
+                <p class="title">Alphonso Mangoes</p>
+
+                <div class="price">
+                  <span class="amount">₹120/kg </span>
+                </div>
+
+                <a href="html/product.html">
+                  <button class="view" data-product="mango">
+                    View Product
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card sale">
+              <img src="images/newProduct2.jpg" />
+
+              <div class="card-content">
+                <p class="title">Red Apples</p>
+
+                <div class="price">
+                  <del>₹210/kg</del>
+                  <span class="amount">₹180/kg </span>
+                </div>
+
+                <a href="html/product.html">
+                  <button class="view" data-product="apple">
+                    View Product
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card new">
+              <img src="images/newProduct3.jpg" />
+
+              <div class="card-content">
+                <p class="title">Fresh Carrots</p>
+
+                <div class="price">
+                  <span class="amount">₹35/kg </span>
+                </div>
+
+                <a href="html/product.html">
+                  <button class="view" data-product="carrot">
+                    View Product
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="card new">
+              <img src="images/newProduct4.jpg" />
+
+              <div class="card-content">
+                <p class="title">Organic Spinach</p>
+
+                <div class="price">
+                  <span class="amount">₹25/bunch </span>
+                </div>
+
+                <a href="html/product.html">
+                  <button class="view" data-product="spinach">
+                    View Product
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFER SECTION -->
+
+      <section class="offer-section">
+        <div class="offer-container">
+          <div class="offer-content">
+            <span class="offer-tag"> Limited Time Offer </span>
+
+            <h2>Up To 25% Off On Organic Products</h2>
+
+            <p>
+              Buy fresh vegetables, fruits and organic products directly from
+              trusted farmers across India.
+            </p>
+
+            <a href="html/shop.html" class="btn"> Shop Now </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+
+      <section class="why-us">
+        <div class="section-title">
+          <h2>Why Choose AgroTrade?</h2>
+          <p>
+            We connect customers directly with farmers to deliver fresh,
+            healthy, and affordable farm products.
+          </p>
+        </div>
+
+        <div class="why-container">
+          <div class="why-card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>100% Fresh Produce</h3>
+            <p>
+              Handpicked fruits and vegetables harvested fresh from trusted
+              farms.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>
+              Quick and reliable delivery ensuring freshness at your doorstep.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h3>Fair Pricing</h3>
+            <p>
+              Direct farmer-to-customer model eliminates unnecessary middlemen.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Organic & Healthy</h3>
+            <p>Chemical-free and organic products for a healthier lifestyle.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+
+      <section class="featured-products">
+        <div class="section-title">
+          <h2>Featured Products</h2>
+          <p>Best-selling farm products loved by our customers.</p>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="images/rice.jpg" />
+
+            <div class="card-content">
+              <p class="title">Basmati Rice</p>
+
+              <div class="price">
+                <span class="amount">₹120/kg</span>
+              </div>
+
+              <a href="html/product.html">
+                <button class="view" data-product="rice">View Product</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/honey.jpg" />
+
+            <div class="card-content">
+              <p class="title">Organic Honey</p>
+
+              <div class="price">
+                <span class="amount">₹299/jar</span>
+              </div>
+
+              <a href="html/product.html">
+                <button class="view" data-product="rice">View Product</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/tomatoes.jpg" />
+
+            <div class="card-content">
+              <p class="title">Fresh Tomatoes</p>
+
+              <div class="price">
+                <span class="amount">₹40/kg</span>
+              </div>
+
+              <a href="html/product.html">
+                <button class="view" data-product="tomato">View Product</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/peas.jpg" />
+
+            <div class="card-content">
+              <p class="title">Green Peas</p>
+
+              <div class="price">
+                <span class="amount">₹80/kg</span>
+              </div>
+
+              <a href="html/product.html">
+                <button class="view" data-product="peas">View Product</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+
+      <section class="testimonials">
+        <div class="section-title">
+          <h2>What Our Customers Say</h2>
+          <p>Trusted by thousands of happy customers across India.</p>
+        </div>
+
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Fresh vegetables delivered right to my doorstep every week. The
+              quality is excellent and prices are fair.
+            </p>
+            <h4>Rahul Sharma</h4>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              AgroTrade connects us directly with farmers. The produce is always
+              fresh and organic.
+            </p>
+            <h4>Priya Verma</h4>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Fast delivery and a great shopping experience. Highly recommended
+              for fresh groceries.
+            </p>
+            <h4>Aman Singh</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG PREVIEW SECTION -->
+
+      <section class="blog-preview">
+        <div class="section-title">
+          <h2>Latest From Our Blog</h2>
+          <p>
+            Learn more about healthy food, farming, and sustainable agriculture.
+          </p>
+        </div>
+
+        <div class="blog-container">
+          <div class="blog-card">
+            <img src="images/blog1.jpg" alt="Organic Farming" />
+
+            <div class="blog-content">
+              <h3>Benefits of Organic Farming</h3>
+
+              <p>
+                Discover how organic farming improves soil health, protects the
+                environment, and produces healthier food.
+              </p>
+
+              <a href="html/blog.html" class="blog-btn"> Read More </a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="images/blog2.jpg" alt="Seasonal Fruits" />
+
+            <div class="blog-content">
+              <h3>Seasonal Fruits Guide</h3>
+
+              <p>
+                Learn which fruits are in season and why eating seasonal produce
+                is always considered better for your health.
+              </p>
+
+              <a href="html/blog.html" class="blog-btn"> Read More </a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="images/blog3.jpg" alt="Fresh Produce" />
+
+            <div class="blog-content">
+              <h3>How Farmers Grow Fresh Produce</h3>
+
+              <p>
+                Explore the journey of fresh vegetables and fruits from farms to
+                your doorstep.
+              </p>
+
+              <a href="html/blog.html" class="blog-btn"> Read More </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Agro<span>Trade</span></h3>
+
+          <p>
+            Bringing fresh farm produce directly from trusted farmers to your
+            doorstep across India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+
+          <ul>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Grains</a></li>
+            <li><a href="#">Organic Products</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Delhi, India
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 98765 43210
+          </p>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            support@agrotrade.com
+          </p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AgroTrade. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SEARCH MODAL -->
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <button id="searchSubmit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/toast.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background: #f8f6f0;
+  --primary: #2e7d32;
+  --secondary: #4c8e4f;
+  --accent: #ffb300;
+  --white: #ffffff;
+  --black: #1b4332;
+  --disabled: #cccccc;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: var(--background);
+}
+
+.checkout-container {
+  padding: 20px;
+}
+
+.checkout-box {
+  display: flex;
+  gap: 20px;
+}
+
+.summary, .form {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .checkout-box {
+    flex-direction: column;
+  }
+}

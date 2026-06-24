@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - AgroTrade</title>
+
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/toast.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <a href="../index.html" class="logo"> Agro <span>Trade</span> </a>
+
+        <ul class="navlist">
+          <li>
+            <a href="../index.html" class="link">HOME</a>
+          </li>
+
+          <li>
+            <a href="shop.html" class="link">SHOP</a>
+          </li>
+
+          <li>
+            <a href="page.html" class="link">PAGE</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="link">BLOG</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="link">CONTACT</a>
+          </li>
+
+          <li class="nav-icons">
+            <a href="#" class="icon" id="searchIcon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="#" class="icon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="cart.html" class="icon link-active">
+              <i class="fa-solid fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
+
+        <a class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <section class="cart-page">
+      <h1>Your Cart</h1>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-summary">
+        <h2>
+          Total:
+          <span id="cartTotal">₹0</span>
+        </h2>
+
+        <button id="checkoutBtn">Proceed To Checkout</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Agro<span>Trade</span></h3>
+
+          <p>
+            Bringing fresh farm produce directly from trusted farmers to your
+            doorstep across India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+
+          <ul>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Grains</a></li>
+            <li><a href="#">Organic Products</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Delhi, India
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 98765 43210
+          </p>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            support@agrotrade.com
+          </p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AgroTrade. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SEARCH MODAL -->
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <button id="searchSubmit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+     <div id="toast" class="toast"></div>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/toast.js"></script>
+  </body>
+</html>
