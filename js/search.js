@@ -31,11 +31,16 @@ function searchProduct() {
   );
 
   if (matchedProduct) {
-    localStorage.setItem("selectedProduct", matchedProduct);
-    window.location.href = "/html/product.html";
+  localStorage.setItem("selectedProduct", matchedProduct);
+
+  const currentPath = window.location.pathname;
+
+  if (currentPath.endsWith("index.html") || currentPath === "/" || currentPath.includes("agrotrade")) {
+    window.location.href = "html/product.html";
   } else {
-    showToast("Product not found","error");
+    window.location.href = "product.html";
   }
+}
 }
 
 // BUTTON CLICK
