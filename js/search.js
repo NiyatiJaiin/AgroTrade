@@ -24,23 +24,34 @@ function searchProduct() {
   if (!query) return;
 
   // match query with your product keys
-  const productKeys = ["mango", "honey", "rice", "tomato", "apple", "carrot", "spinach", "peas", "onion", "potato", "almond", "banana"];
+  const productKeys = [
+    "mango",
+    "honey",
+    "rice",
+    "tomato",
+    "apple",
+    "carrot",
+    "spinach",
+    "peas",
+    "onion",
+    "potato",
+    "almond",
+    "banana",
+  ];
 
-  const matchedProduct = productKeys.find(key =>
-    key.toLowerCase() === query
-  );
+  const matchedProduct = productKeys.find((key) => key.toLowerCase() === query);
 
   if (matchedProduct) {
-  localStorage.setItem("selectedProduct", matchedProduct);
+    localStorage.setItem("selectedProduct", matchedProduct);
 
-  const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.toLowerCase();
 
-  if (currentPath.endsWith("index.html") || currentPath === "/" || currentPath.includes("agrotrade")) {
-    window.location.href = "html/product.html";
-  } else {
-    window.location.href = "product.html";
+    if (currentPath.includes("/html/")) {
+      window.location.href = "product.html";
+    } else {
+      window.location.href = "./html/product.html";
+    }
   }
-}
 }
 
 // BUTTON CLICK
