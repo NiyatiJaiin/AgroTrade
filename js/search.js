@@ -44,6 +44,9 @@ function searchProduct() {
   if (matchedProduct) {
   localStorage.setItem("selectedProduct", matchedProduct);
 
+  console.log(window.location.pathname);
+  console.log("Redirecting...");
+
   const repoName = "AgroTrade";
 
   if (window.location.hostname.includes("github.io")) {
