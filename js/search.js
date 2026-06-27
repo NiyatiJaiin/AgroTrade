@@ -42,19 +42,21 @@ function searchProduct() {
   const matchedProduct = productKeys.find((key) => key.toLowerCase() === query);
 
   if (matchedProduct) {
-  localStorage.setItem("selectedProduct", matchedProduct);
+    localStorage.setItem("selectedProduct", matchedProduct);
 
-  const isHomePage =
-    window.location.pathname.endsWith("/") ||
-    window.location.pathname.endsWith("index.html") ||
-    window.location.pathname.endsWith("/AgroTrade/");
+    const isHomePage =
+      window.location.pathname.endsWith("/") ||
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname.endsWith("/AgroTrade/");
 
-  if (isHomePage) {
-    window.location.href = "./html/product.html";
+    if (isHomePage) {
+      window.location.href = "./html/product.html";
+    } else {
+      window.location.href = "product.html";
+    }
   } else {
-    window.location.href = "product.html";
+    showToast("Product not found!", "error");
   }
-}
 }
 
 // BUTTON CLICK
