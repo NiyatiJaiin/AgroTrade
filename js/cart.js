@@ -1,7 +1,5 @@
 const cartItems = document.getElementById("cartItems");
-
 const cartTotal = document.getElementById("cartTotal");
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function displayCart() {
@@ -9,19 +7,13 @@ function displayCart() {
 
   if (cart.length === 0) {
     cartItems.innerHTML = `
-
         <div class="empty-cart">
-
             <h2>Your Cart Is Empty</h2>
-
             <p>Add some fresh farm products first.</p>
-
         </div>
-
     `;
 
     cartTotal.textContent = "₹0";
-
     return;
   }
 
@@ -33,37 +25,23 @@ function displayCart() {
     total += price * item.quantity;
 
     cartItems.innerHTML += `
-
         <div class="cart-item">
-
             <img src="${item.image}">
-
             <div class="item-details">
-
                 <h3>${item.name}</h3>
-
                 <p>Price: ${item.price}</p>
-
                 <p>
                 <button onclick="decreaseQuantity(${index})"> - </button>
-                
-                <span class="qty">${item.quantity} </span>
-                
+                <span class="qty">${item.quantity} </span>               
                 <button onclick="increaseQuantity(${index})"> + </button>
                 </p>
-
             </div>
-
             <button
             class="remove-btn"
             onclick="removeItem(${index})">
-
             Remove
-
             </button>
-
         </div>
-
         `;
   });
 
