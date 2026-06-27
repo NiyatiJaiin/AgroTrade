@@ -24,20 +24,7 @@ function searchProduct() {
   if (!query) return;
 
   // match query with your product keys
-  const productKeys = [
-    "mango",
-    "honey",
-    "rice",
-    "tomato",
-    "apple",
-    "carrot",
-    "spinach",
-    "peas",
-    "onion",
-    "potato",
-    "almond",
-    "banana",
-  ];
+  const productKeys = [ "mango", "honey",  "rice",  "tomato",  "apple",  "carrot",  "spinach",  "peas",  "onion",  "potato", "almond", "banana"];
 
   const matchedProduct = productKeys.find((key) => key.toLowerCase() === query);
 
